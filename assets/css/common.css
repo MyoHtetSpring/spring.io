@@ -42,6 +42,7 @@
 }
 .main-btn a {
   width: 140px;
+  font-weight: bold;
   border: 2px solid #eaeaea;
   border-radius: 5px;
   padding: 10px 5px;
@@ -56,6 +57,7 @@
 }
 .main-btn.main-btn.bg-white a {
   color: #ee5555;
+  font-weight: bold;
 }
 .main-btn a:hover,
 .main-btn.bg-white a:hover {
