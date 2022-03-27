@@ -1,0 +1,366 @@
+@charset "utf-8";
+.main-v {
+  position: relative;
+}
+.video {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  object-fit: cover;
+}
+.video-box {
+  width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.main-mv {
+  position: absolute;
+  top: 25%;
+  left: 75px;
+}
+.main-txt {
+  color: #fff;
+}
+.main-txt h1 {
+  font-size: 32px;
+  line-height: 1.5;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.main-btn-gp {
+  display: flex;
+  align-items: center;
+}
+.main-btn a {
+  width: 140px;
+  border: 2px solid #eaeaea;
+  border-radius: 5px;
+  padding: 10px 5px;
+}
+.main-btn a {
+  text-align: center;
+  color: #fff;
+}
+.main-btn.bg-white {
+  background: #fff;
+  border-radius: 5px;
+}
+.main-btn.main-btn.bg-white a {
+  color: #b30000;
+}
+.main-btn a:hover,
+.main-btn.bg-white a:hover {
+  background: #b30000;
+  color: #fff;
+}
+/*  */
+.about,
+.objective,
+.school,
+.testimonials,
+.featured-on,
+.institute,
+.students-insight {
+  padding: 50px 0;
+}
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+.fade-txt {
+  color: #000;
+}
+.fade-txt p {
+  margin-bottom: 25px;
+}
+/* fadeUp */
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 1s;
+
+  opacity: 0;
+
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    transform: translateY(100px);
+
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+
+    opacity: 1;
+  }
+}
+
+/*  */
+
+.objective {
+  background: #eaeaea;
+}
+.objective-block,
+.institute-block,
+.school-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -15px;
+}
+.obj-block {
+  width: 25%;
+  padding: 0 15px;
+  margin-bottom: 70px;
+}
+.obj-box {
+  width: 100%;
+  background: #fff;
+  position: relative;
+}
+.obj-box-img {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: #f9a857;
+  border-radius: 50%;
+}
+.obj {
+  position: absolute;
+  top: -40px;
+  right: 34%;
+}
+.obj .obj-img {
+  width: 40px;
+  position: absolute;
+  top: 20%;
+  right: 26%;
+}
+.obj-box p {
+  color: #000;
+  text-align: center;
+  padding: 100px 25px 100px 25px;
+}
+/* institute */
+.insti-box,
+.school-box {
+  width: 33.33%;
+  padding: 0 10px;
+  margin-bottom: 30px;
+}
+/* school */
+.school-box {
+  height: 250px;
+}
+.school-box,
+.school-box-img {
+  border-radius: 20px;
+}
+.school-box-img {
+  background: #ee5555;
+  height: 250px;
+}
+.school-h {
+  height: 250px;
+}
+.school-box-img.school-h img {
+  padding: 65px 25px 60px 25px;
+}
+.school-box-img img {
+  overflow: hidden;
+  padding: 56px 5px 63px 5px;
+}
+.school-box-img img {
+  backface-visibility: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+.school-box-img:hover img {
+  transform: scale(1.1);
+}
+/*  */
+/* ===============================
+section testimonials
+=============================== */
+#testimonials .slick-slide {
+  width: 370px;
+  margin: 0 5px;
+}
+#testimonials .slick-slide.slick-active {
+  opacity: 1;
+}
+#testimonials .slick-prev,
+#testimonials .slick-next {
+  top: calc(50% - 65px);
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.5);
+}
+#testimonials .slick-list {
+  padding: 50px 0 0 0;
+}
+#testimonials .slick-prev {
+  left: calc(20% - 190px);
+}
+#testimonials .slick-next {
+  right: calc(20% - 190px);
+}
+#testimonials .slick-prev:before,
+#testimonials .slick-next:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: -5px 0 0 -7px;
+  content: "";
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+}
+#testimonials .slick-prev:before {
+  margin: -5px 0 0 -4px;
+  transform: rotate(-135deg);
+}
+#testimonials .slick-next:before {
+  transform: rotate(45deg);
+}
+.testimon-block {
+  display: flex;
+  align-items: center;
+  margin: 0 -5px;
+}
+.test-block {
+  width: 100%;
+  padding: 50px 0 0 0;
+}
+.test-box p {
+  color: #000;
+}
+.test-box {
+  border-radius: 10px;
+  border: 2px solid #f0f0f0;
+  position: relative;
+}
+.test-box-img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 4px solid #f9a857;
+  position: absolute;
+  top: -50px;
+  right: 40%;
+}
+.test-box-img img {
+  border-radius: 50%;
+}
+.test-txt {
+  padding: 100px 20px;
+  text-align: center;
+}
+.test-txt .test-student {
+  color: #f9aa5a;
+}
+.test-txt .test-lang {
+  color: #7b828e;
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  #testimonials .slick-slide {
+    width: 295px;
+    margin: 0 10px;
+  }
+  #testimonials .slide-img img {
+    margin-bottom: 20px;
+    box-shadow: none;
+  }
+  #testimonials .slick-slide {
+    opacity: 1;
+  }
+  #testimonials .slick-prev {
+    left: calc(50% - 165px);
+  }
+  #testimonials .slick-next {
+    right: calc(50% - 165px);
+  }
+  #testimonials .slick-prev,
+  #testimonials .slick-next {
+    top: calc(50% - 85px);
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 351px) {
+  #testimonials .slick-prev {
+    left: 0;
+  }
+  #testimonials .slick-next {
+    right: 0;
+  }
+}
+
+/*  */
+.featured-on-block {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.feature-box {
+  width: 33.33%;
+  margin: 30px 0 30px 0;
+}
+.feature-img {
+  width: 200px;
+  margin: 0 auto;
+}
+.filter-img {
+  filter: grayscale(1);
+}
+.filter-img:hover {
+  filter: grayscale(0);
+}
+/* ===============================
+
+=============================== */
+@media screen and (max-width: 768px) {
+}
+#container {
+  height: 500px;
+  min-width: 310px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.loading {
+  margin-top: 10em;
+  text-align: center;
+  color: gray;
+}
+/* ===============================
+common-slider
+=============================== */
+.pickup-ls .slick-slide {
+  width: 270px;
+  margin: 0 10px;
+}
+@media screen and (max-width: 768px) {
+  .pickup-ls .slick-slide {
+    width: 205px;
+    margin: 0 10px;
+  }
+}
