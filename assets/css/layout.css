@@ -90,8 +90,8 @@ img {
   display: none;
 }
 .container {
-  max-width: 1440px;
-  padding: 0 20px;
+  max-width: 1380px;
+  padding: 0 40px;
   margin: 0 auto;
 }
 .sec-ptop {
@@ -251,7 +251,7 @@ bread crumb
 /* footer */
 .foot-container {
   max-width: 1500px;
-  padding: 50px 50px;
+  padding: 50px 50px 20px 50px;
   margin: 0 auto;
   background: #353535;
 }
@@ -313,6 +313,11 @@ bread crumb
 .testimonials,
 .featured-on,
 .students-insight {
-  background: url(../img/common/spring-bg.png);
+  background: url("../img/common/spring-bg.png");
   background-size: 100%;
+}
+.foot-copy {
+  font-size: 12px;
+  text-align: center;
+  color: #D1D5DB;
 }
